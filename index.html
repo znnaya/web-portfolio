@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicon_io/android-chrome-512x512.png">
+    <title>Zainn's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Zainn</div>
+
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Tombol Dark Mode + Hamburger -->
+        <div class="nav-right">
+            <button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
+            <button id="hamburger" class="hamburger-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-img-box">
+                <img src="assets\1A9A0071.jpg" alt="Foto Profil" class="hero-img">
+            </div>
+
+            <div class="hero-text-box">
+                <h1>Hello, I am <span class="highlight">Zainnaya</span></h1>
+                <p class="hero-role">Informatics Graduate | Data Analyst | UI/UX Designer</p>
+                <!-- <p class="hero-desc">Informatics graduate with a 3.92 GPA specializing in Data Analyst, UI/UX Design, prototyping, and user-centered mobile app design.</p> -->
+
+                <div class="hero-social-buttons">
+                    <a href="https://linkedin.com/in/zainnayaputri" target="_blank" class="social-btn" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/znnaya" target="_blank" class="social-btn" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:putrizainnaya@gmail.com" class="social-btn" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div><a href="#projects" class="btn-primary">See Projects</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="center">
+            Hello! I am an Informatics graduate from Universitas Ahmad Dahlan with a 3.92 GPA, 
+            combining strong skills in <strong>UI/UX Design</strong> and <strong>Data Analytics</strong>.
+        </p>
+        <p class="center">
+            My background blends creative problem-solving and analytical thinking. 
+            On the design side, I specialize in user research, wireframing, 
+            and interactive Figma prototyping. On the data side, I clean, analyze, 
+            and visualize complex datasets using Python, SQL, and Looker Studio. 
+            Backed by years of experience as a Laboratory Teaching Assistant mentoring 50+ students 
+            per course, I bring strong technical logic, clear communication, and adaptable problem-solving
+            to every project.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
+            <div class="skill-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+            <div class="skill-card"><i class="fa-solid fa-chart-line"></i><span>Looker Studio</span></div>
+            <div class="skill-card"><i class="fa-solid fa-code"></i><span>Google Colab</span></div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <!-- Single Segmented Toggle Button -->
+        <div class="project-toggle-wrapper">
+            <div class="project-toggle">
+                <button class="toggle-btn active" onclick="switchCategory('uiux', this)">UI/UX Design</button>
+                <button class="toggle-btn inactive" onclick="switchCategory('data', this)">Data Analysis</button>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Card Proyek UI/UX 1 -->
+            <div class="project-card uiux-project">
+                <div class="project-image">
+                    <img src="assets/Project 1_UIUX.png" alt="Sahabat Stunting Preview" />
+                </div>
+                <div class="project-info">
+                    <h5>Team Project • 2024</h5>
+                    <h3>Sahabat Stunting Mobile App</h3>
+                    <p>Led a team of 4 to design a high-fidelity stunting prevention mobile app. Conducted user research, wireframing, and validated features via Usability Testing.</p>
+                    <div class="tags">
+                        <span>Figma</span><span>Jitter</span><span>UI Design</span><span>User Research</span><span>Usability Testing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/proto/jt4mmpU1SD8tIW9wSBEhFg/Week-3---4?page-id=70%3A450&node-id=184-3527&p=f&viewport=178%2C120%2C0.05&t=ODp9tWGzWhC0h9jd-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=692%3A7644&show-proto-sidebar=1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Figma</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Proyek UI/UX 2 -->
+            <div class="project-card uiux-project">
+                <div class="project-image">
+                    <img src="assets/Project 2_UIUX.png" alt="Cinepolis Preview" />
+                </div>
+                <div class="project-info">
+                    <h5>Individual Project • 2024</h5>
+                    <h3>Cinepolis App Redesign</h3>
+                    <p>Redesigned the movie ticketing experience to optimize navigation, schedule exploration, and checkout flow.</p>
+                    <div class="tags">
+                        <span>Figma</span><span>UI Design</span><span>User Research</span><span>Usability Testing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/proto/cCTDKkuOln6MyIeso2jz68/Cinepolis-App?page-id=0%3A1&node-id=1-451&viewport=94%2C125%2C0.08&t=3f4MdGVkE6zIHZb9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A451&show-proto-sidebar=1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Figma</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Proyek UI/UX 3 -->
+            <div class="project-card uiux-project">
+                <div class="project-image">
+                    <img src="assets/Project 3_UIUX.png" alt="Concertic Preview" />
+                </div>
+                <div class="project-info">
+                    <h5>Personal Project • 2026</h5>
+                    <h3>Concertic - Concert Ticketing App</h3>
+                    <p>Designed an end-to-end mobile app prototype with 25+ screens covering event discovery, booking flow, ticket management, and profile.</p>
+                    <div class="tags">
+                        <span>Figma</span><span>Desk Research</span><span>UI Design</span><span>Prototyping</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/proto/mrKQpsi03DBHhXYFK7oQVK/Concertic-Ticketing-App?page-id=0%3A1&node-id=6163-6374&p=f&viewport=274%2C108%2C0.14&t=TrqGmSOa4F1iMfP9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6163%3A6374&show-proto-sidebar=1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Figma</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Proyek Data 1 -->
+            <div class="project-card data-project" style="display: none;">
+                <div class="project-image">
+                    <img src="assets/Project 1_Data.png" alt="Duolingo Sentiment Preview" />
+                </div>
+                <div class="project-info">
+                    <h5>Data Science • 2025</h5>
+                    <h3>Duolingo Review Sentiment Analysis</h3>
+                    <p>Preprocessed a 10K-review Kaggle dataset using NLP techniques and built a binary SVM classifier in Python reaching 89% accuracy.</p>
+                    <div class="tags">
+                        <span>Python</span><span>NLP</span><span>SVM</span><span>Pandas</span>
+                    </div>
+                    <!-- <div class="project-links">
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Notebook</a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Source</a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Card Proyek Data 2 -->
+            <div class="project-card data-project" style="display: none;">
+                <div class="project-image">
+                    <img src="assets/Project 2_Data.png" alt="Netflix Dashboard Preview" />
+                </div>
+                <div class="project-info">
+                    <h5>Data Dashboard • 2026</h5>
+                    <h3>Netflix Data Analysis Dashboard</h3>
+                    <p>Built an interactive Looker Studio dashboard over 7,900+ titles with filters by country, type, and genre to visualize trends.</p>
+                    <div class="tags">
+                        <span>Looker Studio</span><span>Data Viz</span><span>SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://datastudio.google.com/reporting/968ccb0b-2b89-4023-9047-18acfb63ffaf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Looker Link</a>
+                        <a href="https://github.com/znnaya/netflix-data-analysis" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Proyek Data 3 -->
+            <div class="project-card data-project" style="display: none;">
+                <div class="project-image">
+                    <img src="assets/Project 3_Data.png" alt="Sales Performance Preview" />
+                </div>
+                <div class="project-info">
+                    <h5>Data Dashboard • 2026</h5>
+                    <h3>Sales Performance Analysis</h3>
+                    <p>Analyzed 192 transactions from 168 customers, covering monthly sales trends, geographic distribution, and ad channels.</p>
+                    <div class="tags">
+                        <span>Looker Studio</span><span>Analytics</span><span>Reporting</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://datastudio.google.com/reporting/f467f69e-5c3e-441c-bf5e-6a8b6a6e1603" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Looker Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-grid">
+            <!-- Education 1: Universitas Ahmad Dahlan -->
+            <div class="education-card">
+                <div class="edu-header">
+                    <span class="edu-badge">Bachelor Degree</span>
+                    <span class="edu-date">Sep 2022 - Jun 2026</span>
+                </div>
+                <h3>Bachelor of Informatics</h3>
+                <h4>Universitas Ahmad Dahlan</h4>
+                <div class="gpa-container">
+                    <span class="gpa-label">GPA</span>
+                    <span class="gpa-value">3.92 / 4.00</span>
+                </div>
+                <div class="relevant-courses">
+                    <strong>Relevant Coursework:</strong>
+                    <div class="course-tags">
+                        <span>UI/UX Design</span> <span>Web Programming</span> <span>Software Analysis & Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education 2: Startup Campus (MSIB) -->
+            <div class="education-card">
+                <div class="edu-header">
+                    <span class="edu-badge highlight">Certified Program</span>
+                    <span class="edu-date">Sep 2024 - Dec 2024</span>
+                </div>
+                <h3>UI/UX Design Certificate</h3>
+                <h4>Startup Campus - Achmad Zaky Foundation (MSIB Batch 7)</h4>
+                <div class="gpa-container">
+                    <span class="gpa-label">Final Score</span>
+                    <span class="gpa-value">87.00 / 100.00</span>
+                </div>
+                <p class="edu-desc">Executed end-to-end UI/UX methodology from user research, wireframing, interactive prototyping, to design systems using Figma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="timeline-container">
+                
+                <!-- Item Pengalaman 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2025 - Sep 2025</span>
+                        <h3>Publication & Documentation Division</h3>
+                        <h4 class="timeline-org">KKN • Butuh Kidul, Yogyakarta</h4>
+                        <p>Designed profile & member overview materials in Canva, managed social media feeds, and documented field activities daily.</p>
+                    </div>
+                </div>
+
+                <!-- Item Pengalaman 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2025 - Jul 2025</span>
+                        <h3>Laboratory Teaching Assistant</h3>
+                        <h4 class="timeline-org">Universitas Ahmad Dahlan, Yogyakarta</h4>
+                        <p><strong>Courses:</strong> Discrete Mathematics, Software Analysis & Design, and AI.</p>
+                        <p>Guided 50+ students per course across 3 courses, leading 6 lab sessions per week. 
+                            Taught system modeling (UML), mathematical logic, and basic AI models in Python. 
+                            Evaluated student project assignments and provided technical troubleshooting.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Pengalaman 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 2024 - Jan 2025</span>
+                        <h3>Laboratory Teaching Assistant</h3>
+                        <h4 class="timeline-org">Universitas Ahmad Dahlan, Yogyakarta</h4>
+                        <p><strong>Courses:</strong> Fundamental Programming, Informatics Statistics, and OOP.</p>
+                        <p>Guided 50+ students per course across 3 courses, leading 6 lab sessions per week. 
+                            Taught hands-on C++ programming, SPSS data analysis, and Java-based OOP.
+                            Conducted practical evaluations, graded lab reports, and reviewed code submissions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Pengalaman 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2023 - Feb 2024</span>
+                        <h3>Laboratory Teaching Assistant</h3>
+                        <h4 class="timeline-org">Universitas Ahmad Dahlan, Yogyakarta</h4>
+                        <p><strong>Courses:</strong> Informatics Logic and Fundamental Programming.</p>
+                        <p>Guided 50+ students per course across 2 courses, leading 4 lab sessions per week. 
+                            Taught basic C++ programming, logic flowcharts, and truth tables.
+                            Assisted with error troubleshooting and practical exam preparation.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Get in Touch</h2>
+        <p class="center">Looking to collaborate or discuss potential opportunities? Let's get in touch.</p>
+        <div class="social-links">
+            <a href="https://github.com/znnaya" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/zainnayaputri" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:putrizainnaya@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Zainnaya Putri Diyanti. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i> 
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
